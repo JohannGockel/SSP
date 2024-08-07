@@ -2,8 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
+
 #for fitting
 from scipy.optimize import curve_fit
+
 
 #just for better plots
 import scienceplots
