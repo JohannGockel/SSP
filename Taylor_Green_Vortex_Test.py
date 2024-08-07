@@ -1,8 +1,9 @@
-from muFFT import FFT
-import muGrid as muG
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+
+#for fitting
+from scipy.optimize import curve_fit
 
 #just for better plots
 import scienceplots
@@ -132,7 +133,7 @@ plt.show()
 
 
 #Fitting both progressions in time to the expected time evolution shape (exonential decay)
-from scipy.optimize import curve_fit
+
 def exponential_fit(x,nu,A):
     return A*np.exp(-x*nu)
 
